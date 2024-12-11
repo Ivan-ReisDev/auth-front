@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FRONT TESTE TÉCNICO
 
-## Getting Started
+Este front foi desenvolvido para trabalhar junto com a api, criando um gerenciamento melhor das funcionalidades da api.
 
-First, run the development server:
+## Recursos Disponíveis
+
+- Criar usuário.
+- Listar usuários: Obtenha o perfil do usuário de forma rápida.
+- Autenticação.
+
+## Tecnologias usadas
+
+**Linguagem:** Typescript
+
+**Framework:** Next.js
+
+
+## Instalação e Configuração
+
+**Pré requisitos**
+
+Antes de começar, certifique-se de ter instalado:
+
+- Node.js (versão 20 ou superior)
+- Typescript (versão 5.7.2 ou superior)
+- npm ou yarn
+
+Faça o donwload do repositório através do github usando o comando:
+
+Clone the project
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  git clone https://link-to-project
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Go to the project directory
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+  cd my-project
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Após entrar na pasta será necessário configurar variáveis de ambiente, para isso crie na raíz do projeto o arquivo `.env`
+será necessário setar as seguintes variáveis:
 
-## Learn More
+`NEXTAUTH_SECRET` Hash para autenticação
+`NEXTAUTH_URL` URL base de onde o servidor irá rodar.
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Exemplo:
+```bash
+NEXTAUTH_SECRET="XnZiBszjpjcFf8BRRYwNT0wSj7ojf9UM/O0xT6+LAYQ=" 
+NEXTAUTH_URL="http://localhost:3001"
+```
 
-## Deploy on Vercel
+Por padrão o next irá rodar na porta 3001
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Rodar Localmente
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Para iniciar o projeto use:
+
+Instalar dependências
+
+```bash
+  npm install
+```
+
+Iniciar o servidor
+
+```bash
+  npm run dev
+```
+
+O servidor ficará disponível na url `http://localhost:3001`
+
+## Endpoints
+
